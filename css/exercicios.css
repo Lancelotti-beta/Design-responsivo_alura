@@ -1,0 +1,50 @@
+/* Config. de linhamento e tamanho */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo,
+.secao {
+    padding: 0 1%;
+} 
+
+.secao {
+    float: left;
+    width: 33.33%;
+}
+
+.mini {
+    float: left;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Menu da Pagina */
+.logo,
+.barra-nav,
+.menu-principal,
+.busca {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-principal li {
+    float: left;
+}
+
+.barra-nav {
+    margin: .4em 0;
+}
+
+header {
+    padding: .5em 0;
+}
+
+/* conteudo da página - Notícias */
+.destaques {
+    margin-top: 1em;
+}
