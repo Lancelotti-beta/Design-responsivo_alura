@@ -10,8 +10,7 @@
 } 
 
 .secao {
-    float: left;
-    width: 33.33%;
+    width: 100%;
 }
 
 .mini {
@@ -47,4 +46,27 @@ header {
 /* conteudo da página - Notícias */
 .destaques {
     margin-top: 1em;
+}
+
+@media (min-width: 600px) {
+
+    .secao {
+        float: left;
+        width: 50%;
+    }
+
+    html {
+        font-size: 1.125em;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .secao {
+        width: 33.33%;
+    }
+
+    html {
+        font-size: 1.25em;
+    }
 }
