@@ -1,8 +1,13 @@
 /* Config. de linhamento e tamanho */
+.container-flex {
+    display: flex;
+    padding: .7em;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
-}
+}  
 
 .logo,
 .secao {
@@ -13,13 +18,8 @@
     width: 100%;
 }
 
-.mini {
-    float: left;
-    width: 50%;
-}
-
-img {
-    max-width: 100%;
+.logo img {
+    width: 200px;
 }
 
 /* Menu expandio */
@@ -61,6 +61,43 @@ img {
     background: rgba(0,0,0,0.4);
 }
 
+/* Criando menu - icones (com css puro) */
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+}
+
+.menu-abrir {
+    height: 0;
+    width: .75em;
+    padding-top: .125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+
+    vertical-align: middle;
+    margin: .5em;
+}
+
+.menu-fechar {
+    position: relative;
+    height: 1em;
+    width: 1em;
+}
+
+.menu-fechar::before {
+    content: '\00D7';
+    font-size: 1.6em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+}
+
 /* conteudo da página - Notícias */
 .destaques {
     margin-top: 1em;
@@ -70,6 +107,11 @@ img {
 
     .menu-abrir, .barra-nav .menu-fechar {
         display: none;
+    }
+
+    .container-flex {
+        display: block;
+        padding: 0;
     }
 
     html {
@@ -103,9 +145,9 @@ img {
         float: left;
     }
     
-    
-    header {
-        padding: .5em 0;
+    .mini {
+        float: left;
+        width: 50%;
     }
 
 }
@@ -114,7 +156,7 @@ img {
 
     html {
         font-size: 1.25em;
-    }
+    }  
 
     .secao {
         width: 33.33%;
