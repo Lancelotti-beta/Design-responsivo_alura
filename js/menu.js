@@ -1,6 +1,6 @@
-const $ = document.querySelector.bind(document)
-const botaoAbrir = $('.menu-abrir')
-const botaoFechar = $('.menu-fechar')
+// const $ = document.querySelector.bind(document)
+// const botaoAbrir = $('.menu-abrir')
+// const botaoFechar = $('.menu-fechar')
 
 document.querySelector('.menu-abrir').onclick = () => {
     document.documentElement.classList.add('menu-ativo');
